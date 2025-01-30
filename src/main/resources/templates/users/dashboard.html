@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-th-replace="~{/fragments/base :: base(~{::title}, ~{::main}, ~{})}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+
+
+    <main style="height: 1500px;" class="pl-64">
+
+        <div data-th-if="${loginUser}">
+            <aside> 
+                <!-- sidebar -->
+                <div data-th-replace="~{/users/sidebar :: sidebar}"></div>
+            </aside>
+        </div>
+
+        <h1 class=" text-5xl text-center mb-5">
+            DashBoard
+        </h1>
+
+        User Profile Page Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eligendi amet eum tempore,
+        officia doloremque numquam perferendis atque distinctio? Dolorum cupiditate reprehenderit error praesentium aut,
+        est cum dignissimos fugiat molestias voluptatem. Recusandae, obcaecati eveniet? Accusantium dolorum adipisci
+        delectus autem debitis qui praesentium, numquam nemo. Deserunt expedita eligendi delectus provident suscipit.
+    </main>
+
+
+    <script></script>
+
+
+</body>
+
+</html>
