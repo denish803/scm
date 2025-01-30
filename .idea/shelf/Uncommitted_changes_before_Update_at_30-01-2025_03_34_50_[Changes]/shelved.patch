@@ -1,0 +1,17 @@
+Index: src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>spring.application.name=scm\r\nserver.port=8081\r\n\r\n# Database Configuration\r\nspring.datasource.url = jdbc:mysql://localhost:3306/scm\r\nspring.datasource.username = root\r\nspring.datasource.password = root\r\n\r\n# jpa Configuration\r\nspring.jpa.show-sql = true\r\nspring.jpa.hibernate.ddl-auto = none\r\n\r\n# database naming configuration\r\nspring.jpa.hibernate.naming.implicit-strategy=org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl\r\nspring.jpa.open-in-view=true\r\n\r\n# cloudinary Config\r\ncloudinary.cloud.name=de5inkvwd\r\ncloudinary.api.key=952961537369169\r\ncloudinary.api.secret=-E9wFrx_w_oKeO0xrvVhoOJA-hk\r\ncloudinary.url=cloudinary://952961537369169:-E9wFrx_w_oKeO0xrvVhoOJA-hk@de5inkvwd\r\ncloudinary.config.timeout=60000\r\n\r\n# email configuration\r\nspring.mail.host=smtp.gmail.com\r\nspring.mail.port=587\r\nspring.mail.username=kotadiyadenish803@gmail.com\r\nspring.mail.password=qrzu jbvu bhmc bxzr\r\nspring.mail.properties.mail.smtp.auth=true\r\nspring.mail.properties.mail.smtp.starttls.enable=true\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/src/main/resources/application.properties b/src/main/resources/application.properties
+--- a/src/main/resources/application.properties	(revision ab6dc0ff37a9a32fcf77a9d5f06f02eb2f944d37)
++++ b/src/main/resources/application.properties	(date 1738231146428)
+@@ -29,3 +29,6 @@
+ spring.mail.properties.mail.smtp.auth=true
+ spring.mail.properties.mail.smtp.starttls.enable=true
+ 
++
++
++

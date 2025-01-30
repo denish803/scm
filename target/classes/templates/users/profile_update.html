@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-th-replace="~{/fragments/base :: base(~{::title}, ~{::main}, ~{})}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile update</title>
+</head>
+
+<body>
+
+    <main style="height: 1500px;" class="sm:pl-64">
+
+        <div data-th-if="${loginUser}">
+            <!-- sidebar -->
+            <aside data-th-replace="~{/users/sidebar :: sidebar}">
+            </aside>
+        </div>
+
+        <form data-th-action="@{/user/profile/update}" method="post" enctype="multipart/form-data">
+        <div class="min-h-screen flex text-center justify-center items-center" data-th-object="${loginUser}">
+ <!-- User Id field -->
+ <div class="mb-2">
+    <div class="relative mb-6">
+        <input type="hidden" data-th-field="*{id}"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter Contact name">
+    </div>
+</div>
+                <div class="w-full max-w-2xl bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                    <!-- Profile Picture -->
+                    <!-- image Field -->
+
+                    <div class="flex justify-center">
+                        <img data-th-src="*{profilePic}" data-th-alt="*{name}"
+                            class="w-24 h-24 rounded-full shadow-lg border-4 border-blue-500 dark:border-blue-700">
+                    </div>
+                    <div class="relative mb-6">
+                        <input
+                            class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                            data-th-field="*{image}" id="image_file" type="file">
+                    </div>
+
+                    <!-- User Info -->
+                    <div class="mt-6">
+                        <!-- Name -->
+                        <label for="name" class="block text-sm font-medium">Name:</label>
+                        <input type="text" data-th-field="*{name}"
+                            class="w-full mt-1 px-4 py-2 border rounded dark:border-gray-700 dark:bg-gray-900 focus:ring-blue-500 focus:border-blue-500">
+
+                        <!-- Email -->
+                        <label for="email" class="block mt-4 text-sm font-medium">Email:</label>
+                        <input type="email" data-th-field="*{email}"
+                            class="w-full mt-1 px-4 py-2 border rounded dark:border-gray-700 dark:bg-gray-900 focus:ring-blue-500 focus:border-blue-500">
+
+                        <!-- Phone -->
+                        <label for="phone" class="block mt-4 text-sm font-medium">Phone:</label>
+                        <input type="text" data-th-field="*{phone}"
+                            class="w-full mt-1 px-4 py-2 border rounded dark:border-gray-700 dark:bg-gray-900 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="border-t border-gray-200 dark:border-gray-700 mt-6"></div>
+
+                    <!-- Editable Details -->
+                    <div class="mt-6 space-y-4">
+                        <!-- About -->
+                        <div>
+                            <label for="about" class="block text-sm font-medium">About:</label>
+                            <textarea data-th-field="*{about}" rows="3"
+                                class="w-full mt-1 px-4 py-2 border rounded dark:border-gray-700 dark:bg-gray-900 focus:ring-blue-500 focus:border-blue-500">
+                </textarea>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Status Toggles -->
+                    <div class="mt-6 space-y-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="isEnabled" disabled
+                                class="h-4 w-4 text-blue-500 border-gray-300 rounded focus:ring-blue-500"
+                                data-th-if="*{isEnabled}" checked>
+                            <label for="isEnabled" class="ml-2 text-sm">Account Enabled</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="isEmailVerified" disabled
+                                class="h-4 w-4 text-blue-500 border-gray-300 rounded focus:ring-blue-500"
+                                data-th-if="*{isEmailVerified}" checked>
+                            <label for="isEmailVerified" class="ml-2 text-sm">Email Verified</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="isPhoneVerified"
+                                class="h-4 w-4 text-blue-500 border-gray-300 rounded focus:ring-blue-500"
+                                data-th-if="*{isPhoneVerified}" checked>
+                            <label for="isPhoneVerified" class="ml-2 text-sm">Phone Verified</label>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="mt-6 flex justify-between items-center">
+                       
+                        <button type="submit"
+                            class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded dark:bg-green-700 dark:hover:bg-green-800">
+                            Save Changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+
+    <script></script>
+
+
+</body>
+
+</html>

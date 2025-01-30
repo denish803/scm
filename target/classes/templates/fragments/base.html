@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="light" lang="en" data-th-fragment="base(title, main, script)" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title th:replace="${title}"></title>
+
+    <!-- output css -->
+    <link rel="stylesheet" data-th-href="@{/css/output.css}" />
+
+    <!-- style css -->
+    <link rel="stylesheet" data-th-href="@{/css/style.css}" />
+
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- flowbite css -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900  dark:text-white">
+
+    <!-- user login navbar -->
+    <div data-th-if="${loginUser}">
+        <!-- navbar -->
+        <nav class="my-5" data-th-replace="~{/users/user_navbar :: user_navbar}"></nav>
+
+    </div>
+
+    <!--    user not login navbar-->
+    <div data-th-unless="${loginUser}">
+        <nav class="my-5" data-th-replace="~{/fragments/navbar :: navbar}"></nav>
+    </div>
+
+    <!-- main -->
+    <section class="pt-20 sm:pt-10">
+        <main th:replace="${main}">
+
+        </main>
+    </section>
+
+
+    <!-- footer -->
+
+
+    <!-- js -->
+    <th-block data-th-replace="${script}"></th-block>
+
+    <!-- commane css -->
+    <script data-th-src="@{/../js/comm.js}"></script>
+
+    <!-- flowbite js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>

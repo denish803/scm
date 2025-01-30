@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-th-replace="~{/fragments/base :: base(~{::title}, ~{::main}, ~{})}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+
+<body>
+
+
+
+    <main class="sm:pl-64">
+
+        <div data-th-if="${loginUser}">
+            <!-- sidebar -->
+            <aside data-th-replace="~{/users/sidebar :: sidebar}">
+            </aside>
+        </div>
+
+        <div
+            class=" dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen flex justify-center  items-center">
+
+            <!-- Email Sender Card -->
+            <div
+                class="w-full max-w-lg align-middle bg-white dark:bg-gray-800 shadow-xl rounded-lg p-6 border-t-4 border-blue-400 dark:border-blue-500">
+                <!-- Header -->
+                <div class="text-center">
+                    <h1 class="text-3xl font-bold text-blue-600 dark:text-blue-400">Email Sender</h1>
+                </div>
+
+                <!-- Divider -->
+                <div class="border-t my-4 border-gray-300 dark:border-gray-700"></div>
+
+                <!-- Form -->
+                <form class="space-y-4" data-th-action="@{/auth/email}" method="post">
+
+                    <div data-th-replace="~{/fragments/message :: error_msg}"></div>
+
+                    <!-- Recipient Email -->
+                    <div>
+                        <label for="recipientEmail" class="block text-sm font-semibold">Recipient Email:</label>
+                        <input type="email" name="to" id="recipientEmail" placeholder="example@domain.com" required
+                            class="w-full mt-1 px-4 py-2 bg-blue-50 dark:bg-gray-900 border border-blue-300 dark:border-blue-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+
+                    <!-- Subject -->
+                    <div>
+                        <label for="subject" class="block text-sm font-semibold">Subject:</label>
+                        <input type="text" name="subject" id="subject" placeholder="Enter the email subject" required
+                            class="w-full mt-1 px-4 py-2 bg-blue-50 dark:bg-gray-900 border border-blue-300 dark:border-blue-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-semibold">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required
+                            class="w-full mt-1 px-4 py-2 bg-blue-50 dark:bg-gray-900 border border-blue-300 dark:border-blue-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                  </textarea>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex justify-between">
+                        <!-- Clear Button -->
+                        <button type="reset"
+                            class="px-4 py-2 bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-lg dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-300">
+                            Clear
+                        </button>
+                        <!-- Send Email Button -->
+                        <button type="submit" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
+                            Send Email
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
