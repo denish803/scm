@@ -4,7 +4,101 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d2031b3-b785-47f6-8fcb-36297ef89df8" name="Changes" comment="scm init" />
+    <list default="true" id="9d2031b3-b785-47f6-8fcb-36297ef89df8" name="Changes" comment="scm init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scm/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scm/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scm/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scm/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/additional-spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/ScmApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/api_controller/ContactAPIController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/configuration/AuthenticationFailureConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/configuration/ClassBeenConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/configuration/HashPassword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/configuration/ModelBeenConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/configuration/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/controller/BasicPageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/controller/ContactController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/controller/DashboardController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/controller/EmailController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/controller/ProfileController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/controller/RootController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/controller/SingupController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/dto/ContactDTO$ContactDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/dto/ContactDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/dto/MessageDTO$MessageDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/dto/MessageDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/dto/ResponseDTO$ResponseDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/dto/ResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/dto/SocialLinkDTO$SocialLinkDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/dto/SocialLinkDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/dto/UserDTO$UserDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/dto/UserDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/entites/ContactEntity$ContactEntityBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/entites/ContactEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/entites/SocialLinkEntity$SocialLinkEntityBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/entites/SocialLinkEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/entites/UserEntity$UserEntityBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/entites/UserEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/enums/MessageTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/enums/SingupProviderEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/factory/ContactEmailSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/factory/ContactNameSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/factory/ContactPhoneNoSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/factory/ContactSearchFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/helpers/LinkGeneratorHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/helpers/LoggedInUserDataHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/helpers/SessionHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/repository/ContactRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/repository/SocialLinkRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/services/ContactService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/services/EmailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/services/ImageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/services/SocialLinkService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/services_implement/ContactServiceImplement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/services_implement/EmailServiceImplement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/services_implement/ImageServiceImplement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/services_implement/SecurityCustomUserDetailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/services_implement/SocialLinkServiceImplement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scm/services_implement/UserServiceImplement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/output.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/dark-mode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/logo/scm-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/night-mode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/comm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/table-2-excel-convter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/service.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/singup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/add_contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/contact_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/contact_search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/contact_view_model.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/email_sender.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/error_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/profile_update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/success_data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/update_contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/user_navbar.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,10 +146,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "scm",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/spring boot/scm",
+    "last_opened_file_path": "D:/spring boot/github/scm",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
@@ -67,7 +161,7 @@
       <recent name="D:\spring boot\scm\src\main\resources\static\css" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DBConnection">
+  <component name="RunManager" selected="Application.ScmApplication">
     <configuration name="DBConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="db.DBConnection" />
       <module name="scm" />
@@ -114,8 +208,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ScmApplicationTests.emailSender" />
         <item itemvalue="Application.ScmApplication" />
+        <item itemvalue="JUnit.ScmApplicationTests.emailSender" />
         <item itemvalue="Application.DBConnection" />
         <item itemvalue="Application.DBConnection" />
         <item itemvalue="Application.ScmApplication" />
@@ -171,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738229222384</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="scm init">
+      <option name="closed" value="true" />
+      <created>1738237004685</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738237004685</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
